@@ -1,3 +1,8 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +27,7 @@ body {
   position: relative;
   width: 50px;
   height: 50px;
-  background: #fff;
+  background: var(--white-color);
   cursor: pointer;
   z-index: 10;
   display: flex;
@@ -36,7 +41,7 @@ body {
   position: absolute;
   width: 28px;
   height: 3px;
-  background: #000;
+  background: var(--black-color);
   transform: translateY(-6px);
   transition: 0.5s;
 }
@@ -46,7 +51,7 @@ body {
   position: absolute;
   width: 28px;
   height: 3px;
-  background: #000;
+  background: var(--black-color);
   transform: translateY(6px);
   transition: 0.5s;
 }
@@ -95,6 +100,40 @@ body {
 .nav.clicked {
   display: block;
 }
+
 /* main 영역 */
+.main {
+  margin: 150px 0 0 50px;
+  max-width: 900px;
+}
+
+p {
+  color: var(--white-color);
+}
+
+.main img {
+  height: 150px;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  color: white;
+  background-color: #e83c80;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.btn i {
+  margin-right: 7px;
+}
+
+.btn:hover {
+  background-color: #d43071;
+}
 
 /* footer 영역 */
