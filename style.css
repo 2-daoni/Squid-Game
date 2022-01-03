@@ -108,7 +108,7 @@ body {
 
 /* main 영역 */
 .main {
-  margin: 150px 0 0 50px;
+  margin: 100px 50px 30px 50px;
   max-width: 900px;
 }
 
@@ -196,4 +196,48 @@ p {
   color: var(--white-color);
   font-size: 40px;
   cursor: pointer;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 1230px) {
+  .footer {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .prev {
+    margin: 0 0 20px 20px;
+  }
+
+  .footer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  body {
+    background-position: center;
+  }
+
+  .prev {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .play {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .main_logo {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .main_logo {
+    width: 400px;
+  }
 }
