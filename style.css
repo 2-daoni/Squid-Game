@@ -8,6 +8,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -97,6 +98,10 @@ body {
   letter-spacing: 2px;
 }
 
+.nav a:hover {
+  color: #e83c80;
+}
+
 .nav.clicked {
   display: block;
 }
@@ -137,3 +142,58 @@ p {
 }
 
 /* footer 영역 */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+.social a {
+  color: var(--white-color);
+  font-size: 30px;
+  margin-right: 30px;
+}
+
+.social a:hover {
+  color: #e83c80;
+}
+
+.prev {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+.prev img {
+  border: 5px solid var(--white-color);
+  border-radius: 5px;
+  width: 350px;
+  display: block;
+}
+
+.play {
+  position: relative;
+  margin-left: 30px;
+  background-color: #e83c80;
+}
+
+.play:hover img {
+  opacity: 0.5;
+}
+
+.play i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 40px;
+  cursor: pointer;
+}
